@@ -1,0 +1,86 @@
+
+.MainToDo{
+    margin: auto;
+    font-size: 40px;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+}
+.AddButton{
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform .25s;
+        font-family: 'Montserrat', sans-serif;
+}
+.AddButton:before,
+.AddButton:after{
+    position: absolute;
+    content: "DODAJ";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .AddButton:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .AddButton:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .AddButton:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+    cursor: pointer;
+  }
+.NotCompleted{
+color: red;
+}
+.Completed{
+color: green;
+}
+.ToDoMemo{
+    border: 2px solid rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    height: 110px;
+    padding: 30px;
+    margin-top: 30px;
+
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+html, body {
+    width: 100%;
+    height:100%;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
